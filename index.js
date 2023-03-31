@@ -15,6 +15,11 @@ app.post('/tkdownload', (req,res)=>{
     })
   });
 
+
+app.get('/hello', (req,res)=>{
+    res.send({status: 'hello world'});
+});
+
 app.listen(port, ()=>{
     console.log('listening');
 });
